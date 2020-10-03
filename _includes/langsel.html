@@ -1,0 +1,16 @@
+<!--start of _includes/langsel.html-->
+{% capture pagelang %}{{ page.lang | default: "en"}}{% endcapture %}<!--Jekyll check the page language-->
+{% capture langslug %}/{{ pagelang }}/{% endcapture %}<!--Jekyll define language slug-->
+{% capture pageurl %}{{ page.url | replace: langslug, "//" }}{% endcapture %}<!--Jekyll write link for later use-->
+<nav class="langsel">
+∷
+{% if pagelang == "en" %} <strong lang="en">ENGLISH</strong> ∷{% elsif page.has_en %} <a href="{{ pageurl | replace: '//', '/en/'}}" lang="en">ENGLISH</a> ∷{% endif %}<!--Jekyll check whether to write link for English or not-->
+{% if pagelang == "ms" %} <strong lang="ms">MELAYU RUMI</strong> ∷{% elsif page.has_ms %} <a href="{{ pageurl | replace: '//', '/ms/'}}" lang="ms">MELAYU RUMI</a> ∷{% endif %}<!--Jekyll check whether to write link for Rumi Malay or not-->
+{% if pagelang == "ms-Arab" %} <strong lang="ms-Arab">ملايو جاوي</strong> ∷{% elsif page.has_ms-Arab %} <a href="{{ pageurl | replace: '//', '/ms-Arab/'}}" lang="ms-Arab">ملايو جاوي</a> ∷{% endif %}<!--Jekyll check whether to write link for Jawi Malay or not-->
+{% if pagelang == "ms-Brgn" %} <strong lang="ms-Brgn"> </strong> ∷{% elsif page.has_ms-Brgn %} <a href="{{ pageurl | replace: '//', '/ms-Brgn/'}}" lang="ms-Brgn"> </a> ∷{% endif %}<!--Jekyll check whether to write link for Beringin Malay or not-->
+{% if pagelang == "ja" %} <strong lang="ja">日本語</strong> ∷{% elsif page.has_ja %} <a href="{{ pageurl | replace: '//', '/ja/'}}" lang="ja">日本語</a> ∷{% endif %}<!--Jekyll check whether to write link for Japanese or not-->
+{% if pagelang == "zh-Hans" %} <strong lang="zh-Hans">华文</strong> ∷{% elsif page.has_zh-Hans %} <a href="{{ pageurl | replace: '//', '/zh-Hans/'}}" lang="zh-Hans">华文</a> ∷{% endif %}<!--Jekyll check whether to write link for Simplified Chinese or not-->
+{% if pagelang == "zh-Hant" %} <strong lang="zh-Hant">華文</strong> ∷{% elsif page.has_zh-Hant %} <a href="{{ pageurl | replace: '//', '/zh-Hant/'}}" lang="zh-Hant">華文</a> ∷{% endif %}<!--Jekyll check whether to write link for Traditional Chinese or not-->
+</nav>
+<!--end of _includes/langsel.html-->
+

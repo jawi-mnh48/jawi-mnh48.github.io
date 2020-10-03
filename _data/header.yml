@@ -1,0 +1,40 @@
+en:
+  domain: en
+  webtitle: Jawi MNH48
+  pagetitle: Jawi projects of MNH48
+  backtext: ← Back
+ms:
+  domain: ms
+  webtitle: Jawi MNH48
+  pagetitle: Projek jawi oleh MNH48
+  backtext: ← Kembali
+ms-Arab:
+  domain: jawi
+  webtitle: جاوي MNH48
+  pagetitle: ڤروجيک جاوي اوليه MNH48
+  backtext: → کمبالي
+ms-Brgn:
+  domain: brgn
+  webtitle:  
+  pagetitle:    
+  backtext: ↑ 
+ja:
+  domain: jpn
+  webtitle: MNH48のジャウィ文字ワークス
+  pagetitle: MNH48さんが作ったジャウィ文字のプロジェクトの全てを
+  backtext: ←　返る
+zh-Hans:
+  domain: chn
+  webtitle: MNH48爪夷
+  pagetitle: MNH48所作的爪夷工程的一切
+  backtext: ← 返回
+zh-Hant:
+  domain: twn
+  webtitle: MNH48爪夷
+  pagetitle: MNH48所作的爪夷工程的一切
+  backtext: ← 返回
+mul:
+  domain: www
+  webtitle: Jawi MNH48
+  pagetitle: <span dir="rtl" lang="ms-Arab">جاوي MNH48</span>
+  backtext: ←

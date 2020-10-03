@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: "mul" }}"{% if page.lang == "ms-Arab" or page.lang == "ms-Brgn" %} dir="rtl"{% endif %}>
+{% include head.html %}
+<body itemscope itemtype="https://schema.org/WebPage">
+{% include header.html %}
+{% if page.lang != "mul" %}{% include langsel.html %}{% endif %}<!--load language selector here if not at root-->
+<main lang="{{ page.lang | default: "mul" }}">
+<!--start of page content-->
+{{ content }}
+<!--end of page content-->
+</main>
+{% include footer.html %}
+</body>
+<!--Website layout is taken and edited from: https://tl.mnh48.moe , the source is at https://github.com/mnh48/tl.mnh48.moe-->
+</html>

@@ -1,0 +1,27 @@
+title: Jawi MNH48
+description: Homepage of Jawi MNH48
+twitter_username: terjemelayu
+github_username: jawi-mnh48
+timezone: Asia/Kuala_Lumpur
+haslang: ['en', 'ms']
+
+jawi-mnh48:
+    picture: https://jawi.mnh48.moe/assets/img/logo/logo-500.png
+    twitter: terjemelayu
+
+plugins:
+    - jekyll-redirect-from
+    - jemoji
+    - jekyll-mentions
+
+markdown: kramdown
+kramdown:
+  extensions:
+    - no_intra_emphasis
+    - fenced_code_blocks
+    - autolink
+    - tables
+    - strikethrough
+    - superscript
+    - with_to_data
+
